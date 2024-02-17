@@ -67,4 +67,20 @@ COMMIT - if you are using a multi-user system, you may make your DML changes vis
 ROLLBACK - used if you messed up with the changees in the system.
 
 Basic queries: SQL and RA
-Once we have created tables.
+Once we have created tables and loaded them with data, we need to retrieve this data.
+
+Retrieving Data from one table
+
+Retrieval with SQL
+In SQL to rettrieve data stored in our tables we use SELECT statement 
+
+SELECT {atrribute}+
+    FROM {table}+
+    [ WHERE {boolean predicate to pick rows} ]
+    [ ORDER BY {attribute}+ ];
+
+The FOUR BASIC clause of a SQL SELECT statement
+
+The SELECT clause allows us to specify a comma seperated list of attribute names corresponding to the columns that are to be retrieved. You can use asterik character * to retrieve all the columns.
+The WHERE clause is used to constraint which rows to retrieve.
+The ORDER BY clause gives us a way to order the display of the rows in the result of the statement.
